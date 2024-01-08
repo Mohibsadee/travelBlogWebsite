@@ -1,29 +1,41 @@
-
-nav >ul{
-    padding: 0px 2px;
-    display: flex;
-    color: #000000;
+nav {
+    background-image: linear-gradient(to top, #000000, #252424);
+    background-repeat: no repeat;
+    border-radius: 5px;
+    width: 1300px;
+    padding: 3px 50px;
+    margin: 0 auto;
 }
+
+nav > ul {
+    padding: 0;
+    display: flex;
+    color: #ffffff;
+}
+
 nav li {
     list-style: none;
-    padding: 5px;
+    padding: 5px 20px;
+    position: relative; 
 }
 
-nav li :hover{
-    color: #000;
-    display: inline-block;
+nav li:hover {
+    color: #00d9ff;
 }
 
-nav li  a{
+nav li a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 }
-nav li .dropdown{
+
+nav li .dropdown {
     display: none;
     position: absolute;
-    margin-left: 0px;
-}
-nav li:hover .dropdown{
-    display: block;
+    width: 10vw;
+    background-image: linear-gradient(to top, #000000, #2c2c2c);
+    background-repeat: no-repeat;
 }
 
+nav li:hover .dropdown {
+    display: block;
+}
