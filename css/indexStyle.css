@@ -1,9 +1,89 @@
-body{
+body {
     background-image: linear-gradient(to right, #000000, #131322);
- 
+    overflow-x: hidden;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    margin: 0;
 }
 
 
-footer > p{
+/* Glass effect */
+.glass {
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(5.3px);
+    backdrop-filter: blur(5.3px);
+    border: 1px solid rgba(255, 255, 255, 0.19);
+}
+
+/* Header styles */
+main > h1 {
+    margin-left: 5%;
+    margin-top: 10px;
+    text-decoration: underline;
+  
+}
+
+/* Article styles */
+article {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 5px;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+
+}
+/* Featured card styles */
+.featured-card {
+    max-width: 1280px;
+    max-height: 720px;
+    display: flex;
+    background-image: linear-gradient(to right, #031125ec, #00000041);
+    border-radius: 15px;
+
+}
+
+/* Image styles */
+.image-class > img {
+    max-width: 720px;
+    max-height: 720px;
+    background-size: cover;
+    background-position: center;
+    padding-right: 15px;
+    border-radius: 15px;
+}
+/* Read More styles */
+span {
+    content: "\2197";
+}
+.read-more-btn{
+    justify-content: end;
+    border-color: aliceblue;
+    background-color: #031125ec;
+    padding: 0;
+    font: inherit;
+    padding: 15px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.read-more-btn:hover{
+    justify-content: end;
+    border-color: aliceblue;
+    background-image: linear-gradient(to right, #000000, #0b0b2e);
+    padding: 0;
+    font: inherit;
+    padding: 15px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+/* Footer styles */
+footer > p {
     text-align: center;
 }
