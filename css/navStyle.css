@@ -5,8 +5,8 @@
 }
 
 .brand-name-section {
-    border-radius: 15px 15px 0px 0px;
-    background: black;
+    border-radius: 25px 15px 0px 0px;
+    background: none;
     background-repeat: no repeat;
     width: 1300px;
     display: flex;
@@ -30,18 +30,19 @@
 }
 
 .search-section input {
-    border-radius: 7px 0px 0px 45px;
-    border: none;
-    background: #ffffff;
+    border-radius: 7px 0px 0px 25px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0);
     padding-left: 55px;
     width: 380px;
     height: 42px;
+    border-color: rgba(129, 128, 133, 0.514);
     
 }
 
 .search-section button {
     position: absolute;
-    border-radius: 0px 45px 7px 0px;
+    border-radius: 0px 35px 7px 0px;
     margin-right: 5%;
     border: none;
     width: 120px;
@@ -56,9 +57,9 @@
 }
 
 nav {
-    background-image: linear-gradient(to top, #000000, #252424);
+    background-image: linear-gradient(to top, #00000009, #000000);
     background-repeat: no repeat;
-    border-radius: 5px;
+    border-radius: 7px 0px 0px 15px;
     width: 1300px;
     padding: 3px 50px;
     margin: 0 auto;
