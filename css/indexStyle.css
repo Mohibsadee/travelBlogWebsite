@@ -90,6 +90,33 @@ span {
     cursor: pointer;
     color: rgb(255, 255, 255);
 }
+
+
+.tags {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.tag {
+    background: #10043f4d;
+    padding: 5px 10px;
+    margin-left: 5px; /* Adjust spacing between tags */
+    cursor: pointer; /* Add cursor style to indicate interactivity */
+}
+
+.tag.active {
+    background: #3498db; /* Example active state background color */
+    color: #fff; /* Example active state text color */
+  
+}
+
+
+
+
+
+
+
 /* RECENT BLOGS */
 .recent-image-warp {
     display: flex;
