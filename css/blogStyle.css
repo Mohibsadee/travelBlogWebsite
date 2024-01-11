@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    overflow-x:hidden;
+    background:linear-gradient(180deg,rgb(0, 0, 0) 0%,rgb(32, 32, 32) 100%);
+    background-size: cover;
+ /*    background-repeat: no-repeat; */
+}
+
+.card-warp{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+   
+   
+}
+.card{
+    border-radius: 45px;
+    display: flex;
+    flex-wrap: nowrap;
+ 
+  
+}
+.card> img{
+    border-radius: 45px;
+   
+}
