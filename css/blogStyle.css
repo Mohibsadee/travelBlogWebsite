@@ -1,27 +1,28 @@
-body{
+body {
     margin: 0;
-    overflow-x:hidden;
-    background:linear-gradient(180deg,rgb(0, 0, 0) 0%,rgb(32, 32, 32) 100%);
+    overflow-x: hidden;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(32, 32, 32) 100%);
     background-size: cover;
- /*    background-repeat: no-repeat; */
 }
 
-.card-warp{
+.card-warp {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    row-gap: 10px;
-    column-gap: 10px;
-   
-   
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr; /* Define two rows with equal height */
+    gap: 10px; /* Add some gap between grid items */
 }
-.card{
-    border-radius: 45px;
-    display: flex;
-    flex-wrap: nowrap;
- 
-  
+
+.card-large {
+    grid-area: 1 / 1 / 2 / 3; /* Define the grid area for the first row (one column) */
 }
-.card> img{
-    border-radius: 45px;
-   
+
+.card {
+    grid-area: 2 / 1 / 3 / 2; /* Define the grid area for the second row (two columns) */
+    border-color: rgb(0, 0, 0);
+    border-radius: 0px;
 }
+
+
+
+
+
