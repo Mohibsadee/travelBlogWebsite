@@ -95,29 +95,32 @@ nav li a {
     height: 25vh;
     color: #FFF;
     position: relative;
+
 }
-.categories-writing h1{
-    
-    margin-left: 15%;
-    font-family:'Franklin Gothic large' ;
+
+.categories-writing h1 {
+
+    font-family: 'Franklin Gothic large';
+    margin-left: -15%;
 }
-.categories-writing h1 span{
-    
+
+.categories-writing h1 span {
     font-size: 1.5em;
 }
 
-.categories-writing hr{
-    background-color: #FFF;
+.categories-writing> hr {
+    background: #FFF;
+    width: 10%;
 }
 
 .filter {
     display: flex;
     align-items: center;
     z-index: 1;
-    margin-right: 15%;    
- 
+    margin-right: 15%;
 }
-.filter a{
+
+.filter a {
     text-decoration: none;
     color: #FFF;
 }
@@ -135,32 +138,32 @@ nav li a {
     display: block;
 }
 
+.filter li:hover .dropdown .apply-clear {
+    display: inline-flex;
+}
+
 .filter li {
     text-decoration: none;
     color: rgb(255, 255, 255);
     position: relative;
     padding: 10px 15px;
     display: block;
-    
 }
 
 .filter li:hover {
     background-color: #000000;
 }
-.filter li:hover> a{
+
+.filter li:hover > a {
     color: #0051ff;
 }
 
-
 .apply-clear {
     margin-top: 10px;
-}
-
-.apply-clear ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    display: none; 
 }
 
 .apply-clear button {
