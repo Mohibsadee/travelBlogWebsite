@@ -30,7 +30,7 @@
 }
 
 .search-section input {
-    border-radius: 7px 0px 0px 25px;
+    border-radius: 25px 0px 0px 25px;
     color: #ffffff;
     background: rgba(0, 0, 0, 0);
     padding-left: 55px;
@@ -42,7 +42,7 @@
 
 .search-section button {
     position: absolute;
-    border-radius: 0px 35px 7px 0px;
+    border-radius: 0px 35px 35px 0px;
     margin-right: 5%;
     border: none;
     width: 120px;
@@ -76,7 +76,9 @@ nav li {
     padding: 5px 20px;
     position: relative;
 }
-
+i{
+    padding: 5px 10px;
+}
 nav li:hover {
     color: #00d9ff;
 }
@@ -85,6 +87,86 @@ nav li a {
     text-decoration: none;
     color: #ffffff;
 }
+
+.categories-writing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25vh;
+    color: #FFF;
+    position: relative;
+}
+.categories-writing h1{
+    
+    margin-left: 15%;
+    font-family:'Franklin Gothic large' ;
+}
+.categories-writing h1 span{
+    
+    font-size: 1.5em;
+}
+
+.categories-writing hr{
+    background-color: #FFF;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    margin-right: 15%;    
+ 
+}
+.filter a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.filter .dropdown {
+    display: none;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.filter li:hover .dropdown {
+    display: block;
+}
+
+.filter li {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    padding: 10px 15px;
+    display: block;
+    
+}
+
+.filter li:hover {
+    background-color: #000000;
+}
+.filter li:hover> a{
+    color: #0051ff;
+}
+
+
+.apply-clear {
+    margin-top: 10px;
+}
+
+.apply-clear ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.apply-clear button {
+    margin-right: 10px;
+}
+
 
 nav li .dropdown {
     display: none;
@@ -95,6 +177,8 @@ nav li .dropdown {
     z-index: 1;
 }
 
+
 nav li:hover .dropdown {
     display: block;
 }
+

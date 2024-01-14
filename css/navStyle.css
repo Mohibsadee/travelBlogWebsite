@@ -78,6 +78,9 @@ nav li {
     padding: 5px 20px;
 }
 
+i{
+    padding: 5px 10px;
+}
 nav li:hover {
     color: #00d9ff;
 }
@@ -86,6 +89,7 @@ nav li a {
     text-decoration: none;
     color: #ffffff;
 }
+
 
 nav li .dropdown {
     position: absolute;
@@ -99,3 +103,5 @@ nav li .dropdown {
 nav li:hover .dropdown {
     display: block;
 }
+
+

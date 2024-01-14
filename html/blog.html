@@ -9,6 +9,7 @@
     
     <link rel="stylesheet" href="../css/navStyleBase.css">
     <link rel="stylesheet" href="../css/blogStyle.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <title>RoamingVista</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html">Blogs</a>
+            <li><a href="blog.html">Blogs<i class='fas fa-angle-down'></i></a>
               <ul class="dropdown">
                 <li><a href="#">Adventure</a></li>
                 <li><a href="#">Budget</a></li>
@@ -42,8 +43,57 @@
         </nav>
       </header>
       <main>
+
+        <div class="banner-card">
+          <div class="banner-text">
+            <h1>Read</h1>
+            <h1>Write</h1>
+            <h1>Blogs</h1>
+          </div>
+        </div>
+
+        <div class="categories-writing">
+          <div><h1><span>C</span>ategories</h1></div>
+          <hr>
+          <div class="filter">
+              <div class="place-fil">
+                <li><a href="#">Place<i class='fas fa-angle-down'></i></a>
+                  <ul class="dropdown">
+                    <li><a href="#">Africa</a></li>
+                    <li><a href="#">Asia</a></li>
+                    <li><a href="#">America</a></li>
+                    <li><a href="#">Europe</a></li>
+                    <li><a href="#">Australia</a></li>
+                    <div class="apply-clear">
+                      <ul>
+                        <li><button>clear</button></li>
+                        <li><button>Apply</button></li>
+                      </ul>
+                    </div>  
+                  </ul>
+                </li>
+              </div>
+              <div class="type-fill">
+                <li><a href="#">Type<i class='fas fa-angle-down'></i></a>
+                  <ul class="dropdown">
+                    <li><a href="#">Adventure</a></li>
+                    <li><a href="#">Luxuary</a></li>
+                    <li><a href="#">Budget</a></li>
+                    <div class="apply-clear">
+                      <ul>
+                        <li><button>clear</button></li>
+                        <li><button>Apply</button></li>
+                      </ul>
+                    </div>  
+                  </ul>
+                </li>
+              </div>    
+          </div>
+        </div>
+       
+
         <div class="card-warp">
-            <div class="card-large">
+            <div class="card">
                 <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">            
             </div>
             <div class="card">
@@ -54,5 +104,33 @@
             </div>
         </div>
       </main>
+
+      <footer>
+        <div class="footer-wrap">
+          <div class="footer-background">
+            <div class="location">
+              <p>44, Big Building Roosevelt Street<br> Beach Gardens Florida 33410</p>
+            </div>
+            <div class="contact">
+              <p>+00 123 584 124</p>
+              <p>www.website.com</p>
+            </div>
+            <hr>
+            <div class="social-wrap">
+              <div class="social-sec">
+                <i class="fab fa-facebook fa-2x"></i>
+                <i class="fab fa-google fa-2x"></i>
+                <i class="fab fa-instagram fa-2x"></i>
+                <i class="fab fa-linkedin fa-2x"></i>
+              </div>
+            </div>
+            <hr>
+            <div class="rights-section">
+              <p>2017, All Rights Reserved.</p>
+              <p><a href="">logout</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
 </body>
 </html>
