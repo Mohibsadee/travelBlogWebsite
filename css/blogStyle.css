@@ -1,25 +1,28 @@
 body {
     margin: 0;
     overflow-x: hidden;
-    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(32, 32, 32) 100%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.452) 100%, rgba(0, 0, 0, 0.267) 0%), url("https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");    
+
     background-size: cover;
+    background-attachment: fixed;
 
 }
 
 .banner-card{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.452) 100%, rgba(0, 0, 0, 0.267) 0%), url("https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");    
+    background-attachment:fixed;   
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     height: 60vh;
 }
 .banner-text{
     color: #ffffff;
-    font-family: Verdana, Geneva, Tahoma;
+    font-family: Helvetica;;
 
 }
 .banner-text h1{
@@ -29,6 +32,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     column-gap: 5px;
+    row-gap: 7px;
 
 }
 .card {
@@ -42,8 +46,10 @@ body {
   }
   .card-content{
     opacity: 0;
+    visibility: hidden;
 
   }
+  .card
   .card-content>p{
     font-size: 1.5em;
   }
@@ -52,10 +58,16 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.534); /* Add a semi-transparent background for better readability */
+    background-color: rgba(255, 255, 255, 0.534); 
     padding: 20px;
     height: 30%;
     transition: height 0.5s ease;
+  }
+
+  .categories-writing hr{
+    height: 5px;
+    border-color: #ffffff;
+
   }
   
   .writer-info {
@@ -75,6 +87,7 @@ body {
 }
 .card-details:hover .card-content{
     opacity: 1;
+    visibility:visible;
 }
 .card:hover .card-details{
     height: 100%;

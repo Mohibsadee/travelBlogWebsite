@@ -57,7 +57,7 @@
 }
 
 nav {
-    background-image: linear-gradient(to top, #00000009, #000000);
+    background: #000000;
     background-repeat: no repeat;
     border-radius: 7px 0px 0px 15px;
     width: 1300px;
@@ -100,8 +100,11 @@ nav li a {
 
 .categories-writing h1 {
 
-    font-family: 'Franklin Gothic large';
-    margin-left: -15%;
+    font-family: Helvetica;
+    line-height: 1000px;
+    color: #ffffff;
+    font-size: 80px;
+
 }
 
 .categories-writing h1 span {
@@ -109,8 +112,11 @@ nav li a {
 }
 
 .categories-writing> hr {
-    background: #FFF;
-    width: 10%;
+    background: #ffffff;
+    height: 5px;
+    width: 100%;
+    z-index: 1;
+    border: none;
 }
 
 .filter {

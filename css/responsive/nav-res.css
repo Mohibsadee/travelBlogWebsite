@@ -1,0 +1,48 @@
+@media only screen and (max-width: 1080px) {
+    /* Hide the current navigation for small screens */
+    nav {
+        display: none;
+        visibility: hidden;
+    }
+
+    /* Show the menu icon */
+    .menu-icon {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    /* Hide the search section by default */
+    .search-section {
+        display: none;
+    }
+
+    /* Show the search section when the menu icon is clicked */
+    .menu-icon-clicked .search-section {
+        display: flex;
+    }
+
+    /* Styles for the mobile navigation menu */
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #000; /* Change as needed */
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 20px;
+    }
+
+    .mobile-menu a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .mobile-menu a:hover {
+        color: #00d9ff;
+    }
+}
